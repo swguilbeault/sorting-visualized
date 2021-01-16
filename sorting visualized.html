@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>sorting; visualized</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="icon_icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <script src="./js/jquery.js"></script>
+  <script src="./js/wait.js"></script>
+  <script src="./js/Display.js"></script>
+  <script src="./js/SortingVisualized.js"></script>
+  <script src="./js/sketch.js"></script>
+  <script src="./js/column.js"></script>
+  <script src="./js/HSLA_Color.js"></script>
+</head>
+
+<body>
+  <div id="sorting_visualized-graph" style="display:inline-block;"></div>
+
+  <hr class="divider" style="display:inline-block; width:3px; height: 90vh; margin: 5vh 1vw 0vh 1vw">
+
+  <div id="sorting_visualized-menu-wrapper">
+    <div id="sorting_visualized-menu">
+
+      <div class="main">
+        <div id="menu-dropdown">
+
+          <div style="display:inline-block">
+            <img src="icon_menu.png">
+          </div>
+
+          <div style="width: 0; height: 0; position: relative; display:inline">
+            <div id="dropdown-options"></div>
+          </div>
+
+          <div id="alg_name-wrapper">
+            <p id="alg_name"><b>Bubble</b>Sort</p>
+          </div>
+
+        </div>
+
+        <hr style="width:0;height:0;margin:3%">
+
+        <div id="section1-wrapper">
+
+          <div>
+            <span id="shuffle" class="disableable">
+          <img src="icon_shuffle.png">
+          <span>
+            <p>  shuffle</p>
+          </span>
+            <span>
+    </div>
+
+    <hr style="width:0;height:0;margin:2%">
+
+    <div>
+      <span id="sort" class="disableable">
+        <img src="icon_sort.png">
+        <span>
+          <p>  sort</p>
+        </span>
+            </span>
+          </div>
+
+          <hr style="width:0;height:0;margin:2%">
+
+          <div id="speed-slider">
+            <input type="range" min="0" max="101" value="10" class="slider" id="speed">
+            <p id="speedDisp">1.0x</p>
+            <p id="text">speed</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <hr class="divider" style="width: 50%; height:3px; margin: 16% 0 16% 25%;">
+
+      <div id="appearance">
+        <div class="legend">
+          <div class="third">
+            <p>Legend</p>
+          </div>
+          <div class="twothird ">
+            <div class="legend-item" id="normal">
+              <p>normal</p>
+            </div>
+            <div class="legend-item" id="compare">
+              <p>compare</p>
+            </div>
+            <div class="legend-item" id="sorted">
+              <p>sorted</p>
+            </div>
+          </div>
+        </div>
+
+        <hr style="width:0;height:0;margin:3%">
+
+        <div>
+          <div class="third">
+            <p>dark theme</p>
+          </div>
+          <div class="twothird">
+            <div id="theme-switch">
+              <input type="checkbox">
+            </div>
+          </div>
+        </div>
+
+        <hr style="width:0;height:0;margin:3%">
+
+        <div>
+          <div class="third">
+            <p>accent hue</p>
+          </div>
+          <div class="twothird">
+            <input type="range" min="0" max="360" value="0" class="slider" id="hue">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<html>
